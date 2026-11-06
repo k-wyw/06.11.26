@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp6.CaptchaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Введите капчу" Height="250" Width="350"
+        WindowStartupLocation="CenterOwner">
+
+    <StackPanel Margin="20">
+        <TextBlock x:Name="CaptchaTextBlock" FontSize="24" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,10,0,20"/>
+
+        <TextBox x:Name="InputTextBox" FontSize="16" Padding="5" Margin="0,0,0,20"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Проверить" Click="BtnCheck_Click" Width="100" Height="35" Margin="5"/>
+            <Button Content="Другая капча" Click="BtnRefresh_Click" Width="100" Height="35" Margin="5"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
